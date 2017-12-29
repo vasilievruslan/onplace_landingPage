@@ -1,6 +1,18 @@
 //= slick.js
 
 $(function () {
+
+	$('.langswitch-btn').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		touchMove: false,
+		arrows: false,
+	}).click(function () {
+		$('.langswitch').slideToggle('400');
+	});
 	
 	$('.carousel').slick({
 		infinite: true,
