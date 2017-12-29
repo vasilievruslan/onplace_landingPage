@@ -18,6 +18,10 @@ html{
 	background-color: #333333;
 }
 
+*{
+	outline: none;
+}
+
 
 .banner{
 	background:$grayColor url('../img/background-city.jpg') center top no-repeat;

@@ -32,3 +32,24 @@
 		color: #fff;
 	}
 }
+
+.pop-up{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	display: none;
+	z-index: 3;
+}
+.close-btn{
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	font-size: 60px;
+	color: #fff;
+	cursor: pointer;
+}
+#video{
+	width: 100vw; 
+	height: 100vh;
+}

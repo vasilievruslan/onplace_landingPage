@@ -37,11 +37,50 @@ $(function () {
 			});
 	});
 
-
-	function ShowVideo(a) {
-		popUp.html()
-		popUp.fadeIn(400);
+	var $popUp = $('.pop-up');
+	function ShowVideo() {
+		$popUp.html('<iframe id="video" src="https://www.youtube.com/embed/p1YiDKlSe8k?rel=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="close-btn">&#215;</div>')
+		$popUp.fadeIn(400);
 
 	}
+	$('.main-video').click(function(e) {
+		e.preventDefault();
+		ShowVideo()
+		$('.close-btn').click(function() {
+			console.log('ok')
+			$('.pop-up').fadeOut(400);
+			setTimeout(function () {
+				$('.pop-up').html('');
+			},400);
+		});
+	});
+	$('a[href*="#"]')
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {
+	    if (
+	      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+	      && 
+	      location.hostname == this.hostname
+	    ) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	      if (target.length) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000, function() {
+	          var $target = $(target);
+	          $target.focus();
+	          if ($target.is(":focus")) { 
+	            return false;
+	          } else {
+	            $target.attr('tabindex','-1');
+	            $target.focus();
+	          };
+	        });
+	      }
+	    }
+	  });
 
 })
