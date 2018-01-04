@@ -4,7 +4,14 @@
 	justify-content: space-around;	
 	align-items: flex-start;
 	color: #FFF;
-	margin-top: 100px;
+	margin-top: 290px;
+}
+.footer_logo{
+	font-size: 14px;
+	text-align: center;
+	footer{
+		margin-top: 10px;
+	}
 }
 .footer_lins{
 	display: flex;	
@@ -31,12 +38,16 @@
 		text-decoration: none;
 		color: #fff;
 	}
+	&:last-child{
+		padding: 20px 0 0;
+	}
 }
 
 .pop-up{
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
+	left: 0;
 	top: 0;
 	display: none;
 	z-index: 3;

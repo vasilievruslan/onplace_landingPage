@@ -112,54 +112,59 @@ html{
 		width: 62px;
 	}
 	.header__logo{
-		padding-top: 28px;
+		padding-top: 5px;
 	}
 	.header__ad{
 		background-color: rgb(30,157,242);
-		font-size: 39px;
+		font-size: 30px;
 		font-weight: 500;
 		color: #fff;
-		padding: 22px 62px;
+		padding: 20px 61px;
 	}
 }
 .timesect{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	margin: 30px 0px;
+	margin: 48px 0px;
 	.tmesect__time{
 		div{
 			font-size: 31px;
 			text-align: center;
 			&:first-child{
-				font-weight: 500;
+				font-weight: 600;
 			}
 		}
 	}
 }
 .subscribesect{
-	background-color: rgba(30,157,242,0.5);
+	background-color: rgba(30,157,242,0.4);
 	padding: 32px;
 	form{
 		text-align: center;
 	}
 	.subscribesect__btn{
-		font-size: 16px;
-		font-weight: 500;
+		font-size: 20px;
+		font-weight: 600;
 		text-transform: uppercase;
 		color: #333333;
-		padding: 15px 51px;
+		padding: 15px 45px;
 		border-radius: 15px;
 		border: none;
 
 	}
 	.subscribesect__input{
-		font-size: 16px;
+		font-size: 20px;
 		font-weight: 500;
 		color: #333333;
 		padding: 15px 21px;
-		margin: 20px;
+		margin: 20px 60px 20px 0px;
 		border: none;
+		width: 360px;
+		&::placeholder{
+			color: #dddddd;
+			font-weight: 600;
+		}
 	}
 }
 .--gold{
@@ -168,29 +173,28 @@ html{
 .jointoken__list{
 	text-align: left;
 	padding: 0;
-	*{
-		margin-right: 10px;
-	}
+	margin-top: 0;
+	
 	.jointoken__list__item{
-		padding: 10px 0px;
+		padding: 6px 0px;
 		display: flex;
 		align-items: center;
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 16px;
 	}
 	.list-icon{
 		display: inline-block;
 		margin-right: 25px;
-		width: 26px;
-		height: 26px;
+		width: 22px;
+		height: 22px;
 		background: url(../img/ok.svg) center center no-repeat;
 		background-size: contain;
 	}
 	.list-icon-white{
 		display: inline-block;
 		margin-right: 25px;
-		width: 26px;
-		height: 26px;
+		width: 22px;
+		height: 22px;
 		background: url(../img/ok-w.svg) center center no-repeat;
 		background-size: contain;
 	}
@@ -201,9 +205,9 @@ html{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin: 40px 0px;
+	margin: 96px 0px 0px;
 	.jointoken__item{
-		width: 360px;
+		width: 310px;
 		text-align: center;
 		margin: 40px;
 		margin-top: 0px;
@@ -212,22 +216,22 @@ html{
 			font-size: 27px;
 			font-weight: 500;
 			color: #ffffff;
-			padding: 34px;
+			padding: 20px;
 			background-color: rgba(51, 51, 51, 0.6);
 			text-transform: uppercase;
 		}
 		.itemfooter{
 			border-radius:0 0 15px 15px;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: rgba(255, 255, 255, 0.8);
 			padding: 20px;
-			min-height: 290px;
+			min-height: 240px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 		}
 		.jointoken__btn{
 			text-transform: uppercase;
-			font-size: 16px;
+			font-size: 20px;
 			color: #fff;
 			background-color: #f5a623;
 			display: block;
@@ -241,5 +245,5 @@ html{
 	
 }
 .wrapper{
-	background: #333333 url('../img/main_background.png') top center repeat-y;
+	background: #333333 url('../img/background-main.svg') top center repeat;
 }

@@ -1,6 +1,9 @@
 .joinbox{
-	background: linear-gradient(135deg, rgba(48,67,79,1) 0%, rgba(48,67,79,1) 59%, rgba(243,248,253,1) 59%, rgba(243,248,253,1) 71%, rgba(243,248,253,1) 100%);
+	background:transparent url('../img/grafic/pa-background.svg') center top no-repeat;
+	background-size: cover;
 	text-align: center;
+	padding-bottom: 40px;
+	margin-top: 90px;
 	.jointoken__list__item{
 		color: #fff;
 	}
@@ -13,13 +16,13 @@
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 		max-width: 450px;
 		padding: 20px 60px;
-		margin: 40px;
+		margin: 40px 40px 20px;
 		display: block;
 		text-decoration: none;
 	}
 }
 .box__title{
-	font-size: 36px;
+	font-size: 27px;
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -36,16 +39,16 @@
 	color: #dddddd;
 	text-align: center;
 }
-.buyboxes__subtitle,
 .buyboxes__title{
 	font-size: 38px;
 	font-weight: 500;
 	text-transform: uppercase;
-	margin-top: 120px;
+	margin-top: 175px;
+	margin-bottom: 0;
 }
 .buyboxes__subtitle{
 	font-size: 20px;
-	margin-top: 20px;
+	margin: 15px 0px 0px;
 }
 .buyboxes__container{
 	display: flex;
@@ -55,15 +58,20 @@
 }
 .buyboxes_logo{
 	position: relative;
-	top: -125px;
-	margin-bottom: -125px;
+	top: -110px;
+	margin-bottom: -110px;
 }
 .buyboxes_box{
 	background-color: rgba(30, 157, 242, 0.5);
 	border-radius: 15px;
-	max-width: 360px;
+	width: 185px;
+	min-height: 315px;
 	padding: 20px 60px;
-	margin: 150px 40px 20px;
+	margin: 85px 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 
 }
 .buyboxes_text{
@@ -80,16 +88,22 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 25px;
-	color: #ddd;
+	font-size: 20px;
+	color: #fff;
 
 }
 .buyboxes_descript{
-	padding: 100px 0px 0px;
 	p{
-		max-width: 390px;
+		max-width: 300px;
 		font-weight: 500;
-		font-size: 24px;
+		font-size: 20px;
+		margin: 0px 45px;
+		&:first-child{
+			margin-bottom: 50px;
+		}
+	}
+	.--bold{
+		font-weight: 700;
 	}
 	
 } 

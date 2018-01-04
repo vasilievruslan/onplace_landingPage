@@ -1,34 +1,38 @@
 .grafic__title{
 	text-align: center;
 	color: #ffffff;
-	font-size: 40px;
+	font-size: 34px;
 	font-weight: 500;
+	margin-top: 80px;
 }
 .grafic-container{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: flex-start;
-	margin: 140px 0px;
+	margin: 70px 0px;
 	color: #fff;
 }
 .grafic_steps{
 	list-style-type: none;
 	.grafic_steps_item{
 		font-weight: 500;
-		font-size: 20px;
-		padding: 15px 0px;
+		font-size: 18px;
 		display: flex;
 		align-items: center;
-		svg{
+		.grafic-item-ico{
 			margin-right: 20px;
+			width: 25px;
 		}
 	}
 }
 .grafic-pictire{
 	margin: 0 40px 50px;
 	display: flex;
+	.arrows{
+		height: 580px;
+	}
 	.arrow4{
-		margin-left: -40px;
+		margin-left: -32px;
 	}
 }
