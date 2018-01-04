@@ -69,7 +69,7 @@ gulp.task('style:build', function () {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(prefixer())
-        .pipe(cssmin())
+        //.pipe(cssmin())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));

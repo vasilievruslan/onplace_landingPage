@@ -1,5 +1,7 @@
 node_modules/
+build/
 *.log
 *.psd
 .sass-cache/
 .DS_Store
+build/css/style.css
